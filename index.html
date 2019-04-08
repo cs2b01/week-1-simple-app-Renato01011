@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+  <meta charset="UTF-8">
+  <title>MyChat</title>
 </head>
-
 <body>
-Content of the document......
+<input type="text" id="username">
+<input type="password" id="pass">
+<input type="button" id="bt" onclick=CheckLogin()>
+<script>
+  function CheckLogin(){
+    var user = document.getElementById("username");
+    var pass = document.getElementById("pass");
+    if(user.value == pass.value){
+      window.alert("Se ha podido ingresar");
+    }
+  else{
+      window.alert("No se ha podido ingresar");
+    }
+  }
+</script>
 </body>
-
 </html>
